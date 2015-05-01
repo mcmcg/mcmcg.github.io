@@ -90,7 +90,11 @@ Thanks: Addy Osmani, Marcus Haslam
       }
 
       // Fire events
-     
+      var activeElement = $items.eq(activeItem),
+        prevActiveElement = $items.eq(previousActiveElement);
+
+      var afterTimeout = setTimeout(function() {
+      }, cycleDuration);
     /*
       Cycles through items 1 by 1, doing a redraw of positions each time.
       direction = 1 / 0 (1 = right, 0 = left)
