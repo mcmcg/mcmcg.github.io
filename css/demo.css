@@ -671,6 +671,13 @@ h6 span, h7 {
 	margin: 10px auto;
 }
 
+.wrapper9 {
+	position: relative;
+	max-width: 840px;
+	width: 50%;
+	
+}
+
 /* Header Style */
 .codrops-top {
 	line-height: 24px;
