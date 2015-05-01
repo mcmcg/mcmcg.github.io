@@ -5,22 +5,22 @@
 .carousel {
 	left: 50%;
 	position: absolute;
-	width: auto;
+	width: 800px;
 	margin-left: -645px;
 	overflow:visible;
-	height: auto;
-	top: auto;
+	height: 500px;
+	top: 50px;
 
 }
 
 .carousel .item {
-	width: auto;
-	height: auto;
+	width: 640px;
+	height: 480px;
 	background: hidden;
 	background-size: 100%;
 	border:double;
 	vertical-align: middle;
-	line-height: auto;
+	line-height: 150px;
 	
 }
 
