@@ -93,7 +93,12 @@ Thanks: Addy Osmani, Marcus Haslam
       var activeElement = $items.eq(activeItem),
         prevActiveElement = $items.eq(previousActiveElement);
 
+      $ele.trigger('itemBeforeActive', activeElement);
+      $ele.trigger('itemBeforeDeactivate', prevActiveElement);
+
       var afterTimeout = setTimeout(function() {
+        $ele.trigger('itemActive', activeElement);
+        $ele.trigger('itemAfterDeactivate', prevActiveElement);
       }, cycleDuration);
     /*
       Cycles through items 1 by 1, doing a redraw of positions each time.
