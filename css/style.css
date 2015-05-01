@@ -5,11 +5,11 @@
 .carousel {
 	left: 50%;
 	position: absolute;
-	width: 800px;
+	width: auto;
 	margin-left: -645px;
 	overflow:visible;
-	height: 500px;
-	top: 50px;
+	height: auto;
+	top: auto;
 
 }
 
@@ -20,7 +20,7 @@
 	background-size: 100%;
 	border:double;
 	vertical-align: middle;
-	line-height: 150px;
+	line-height: auto;
 	
 }
 
