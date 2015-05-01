@@ -5,10 +5,10 @@
 .carousel {
 	left: 50%;
 	position: absolute;
-	width: 800px;
+	width: 640px;
 	margin-left: -645px;
 	overflow:visible;
-	height: 500px;
+	height: 520px;
 	top: 50px;
 
 }
