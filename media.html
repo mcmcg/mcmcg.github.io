@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Slicebox - 3D Image Slider with Fallback" />
+        <meta name="keywords" content="jquery, css3, 3d, webkit, fallback, slider, css3, 3d transforms, slices, rotate, box, automatic" />
+		<meta name="author" content="Pedro Botelho for Codrops" />
+		<link rel="shortcut icon" href="file:///Macintosh HD/Users/georgia/Desktop/favicon.ico"/> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+        
+</html>
+
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li>
+			<a href="media.html">Media<span class="caret"></span></a>
+			<div>
+				<ul>
+					<li><a href="audio.html">Audio</a></li>
+					<li><a href="video.html">Video</a></li>
+					<li><a href="web.html">Web</a></li>
+				</ul>
+			</div>
+		</li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+</nav>
+         
+<div class="wrapper1">
+ <div class="button_sliding_bgl"><a href="https://vimeo.com/mcguire">V i m e o</a></div>
+ <div class="button_sliding_bgr"><a href="http://www.soundcloud.com/mcguiresound">Sound Cloud</a></div>
+</div>
+
+<div class="container0">
+<span data-title="Welcome To My Site"><a href="index.html">Home</a></span>
+	<span data-title="Production Audio, Sound Design Video Reel"><a href="media.html">Video Reel</a></span>
+	<span data-title="Full Length Production Audio/Sound Design Video Files"><a href="video.html">Video Files</a></span>
+	<span data-title="Origional Compositions, Production Edits And Sound Design"><a href="audio.html">Audio Files</a></span>
+	<span data-title="Custom Website Designs And Themes"><a href="web.html">Custom Website</a></span>
+    <span data-title="Contact Me"><a href="contact.html">Contact Me</a></span>
+    </div>	
+ 		
+<h1>MCMDigitalDesign</h1>
+
+<div class="container1">
+<h2>
+The Video Reel Is the Best Of Many Projects That I Recorded, Engineered and Mastered.</h2>
+      </div>
+            </div>
+
+<div class="container2">
+<h2>
+To Read More About The Details Of Any One Of These Projects View The Video Page.</h2>
+	  </div>
+			</div>
+	<!-- /video -->
+<div class="video">
+	<video width="600" height="auto" controls>
+  		<source src="multimedia/McSizzle2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+	</video>
+</div>
+</br>
+</br>
+<p>&nbsp;</p>
+<h1><span>&copy;MCMDIGITALDESIGN</span></h1>
+
+<a class="scrollup" href="#">Scroll Up</a>
+<a class="scrollup2" href="#">Scroll Up</a>
+      
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slicebox.js"></script>
+    <script type="text/javascript">
+			$(function() {
+				
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ).hide(),
+						$shadow = $( '#shadow' ).hide(),
+						slicebox = $( '#sb-slider' ).slicebox( {
+							onReady : function() {
+
+								$navArrows.show();
+								$shadow.show();
+
+							},
+							orientation : 'r',
+							cuboidsRandom : true,
+							disperseFactor : 30
+						} ),
+						
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':first' ).on( 'click', function() {
+
+								slicebox.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':last' ).on( 'click', function() {
+								
+								slicebox.previous();
+								return false;
+
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+			});
+			
+			// scroll-to-top button show and hide
+jQuery(document).ready(function(){
+    jQuery(window).scroll(function(){
+        if (jQuery(this).scrollTop() > 10) {
+            jQuery('.scrollup').fadeIn();
+        } else {
+            jQuery('.scrollup').fadeOut();
+    }
+});
+// scroll-to-top animate
+jQuery('.scrollup').click(function(){
+    jQuery("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+
+// scroll-to-top button show and hide
+jQuery(document).ready(function(){
+    jQuery(window).scroll(function(){
+        if (jQuery(this).scrollTop() > 10) {
+            jQuery('.scrollup2').fadeIn();
+        } else {
+            jQuery('.scrollup2').fadeOut();
+    }
+});
+// scroll-to-top animate
+jQuery('.scrollup2').click(function(){
+    jQuery("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+		</script>
+	</body>
+</html>	

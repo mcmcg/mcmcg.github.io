@@ -1,1 +1,0 @@
-# mcmcg.github.io
