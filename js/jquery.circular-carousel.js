@@ -90,21 +90,7 @@ Thanks: Addy Osmani, Marcus Haslam
       }
 
       // Fire events
-      var activeElement = $items.eq(activeItem),
-        prevActiveElement = $items.eq(previousActiveElement);
-
-      $ele.trigger('itemBeforeActive', activeElement);
-      $ele.trigger('itemBeforeDeactivate', prevActiveElement);
-
-      var afterTimeout = setTimeout(function() {
-        $ele.trigger('itemActive', activeElement);
-        $ele.trigger('itemAfterDeactivate', prevActiveElement);
-      }, cycleDuration);
-
-      // Run the layering hack (see method below)
-      layerHack(activeItem);
-    };
-
+     
     /*
       Cycles through items 1 by 1, doing a redraw of positions each time.
       direction = 1 / 0 (1 = right, 0 = left)
