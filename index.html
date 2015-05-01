@@ -1,1 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
 
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Slicebox - 3D Image Slider with Fallback" />
+        <meta name="keywords" content="jquery, css3, 3d, webkit, fallback, slider, css3, 3d transforms, slices, rotate, box, automatic" />
+		<meta name="author" content="Pedro Botelho for Codrops" />
+		<link rel="shortcut icon" href="file:///Macintosh HD/Users/georgia/Desktop/favicon.ico"/> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+        
+</html>
+
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li>
+			<a href="media.html">Media<span class="caret"></span></a>
+			<div>
+				<ul>
+					<li><a href="audio.html">Audio</a></li>
+					<li><a href="video.html">Video</a></li>
+					<li><a href="web.html">Web</a></li>
+				</ul>
+			</div>
+		</li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+</nav>
+         
+<div class="wrapper1">
+ <div class="button_sliding_bgl"><a href="https://vimeo.com/mcguire">V i m e o</a></div>
+ <div class="button_sliding_bgr"><a href="http://www.soundcloud.com/mcguiresound">Sound Cloud</a></div>
+</div>
+
+<div class="container0">
+<span data-title="Welcome To My Site"><a href="index.html">Home</a></span>
+	<span data-title="Production Audio, Sound Design Video Reel"><a href="media.html">Video Reel</a></span>
+	<span data-title="Full Length Production Audio/Sound Design Video Files"><a href="video.html">Video Files</a></span>
+	<span data-title="Origional Compositions, Production Edits And Sound Design"><a href="audio.html">Audio Files</a></span>
+	<span data-title="Custom Website Designs And Themes"><a href="web.html">Custom Website</a></span>
+    <span data-title="Contact Me"><a href="contact.html">Contact Me</a></span>
+    </div>	
+ 		
+<h1>MCMDigitalDesign</h1>
+
+<H6><span>Welcome To My Website<br><br>
+Welcome To The Future Of Audio Engineering, Sound Design and Clean Responsive Websites Based Around Your Needs.Enjoy Viewing The Many Projects and Various Personal Endevours That I Persue As My Profession And More Importantly
+My Passion.<br>
+My Website Is Designed To Load Quickly Using HTML5 And CSS3. Using The Latest HTML5 And CSS3 Coding Has Many Advantages.<br>
+A Few Advantages Are Security,
+Search Engine And Mobile Device Optimization, Load Speeds And Customization. Using the latest Software Elements and Plugins To Create Responsive Beautiful Designs and Outstanding Fidelity.<br>
+Dont Hesitate To Contact Me With Any Question Or Comments.</span></H6>
+			<div class="wrapper">
+
+				<ul id="sb-slider" class="sb-slider">
+					<li>
+						<a href="images/audioguy copy.jpg" target="_blank"><img src="images/audioguy.png" alt="images/audioguy.png"/></a>
+						
+				  </li>
+					<li>
+						<a href= target="_blank"><img src="images/stage1.png" alt="images/stage1.png"/></a>
+						
+					</li>
+					<li>
+					  <a href="images/stage2.png" target="_blank"><img src="images/stage2.png" alt="images/stage2.png"/></a>
+						
+					</li>
+					<li>
+					  <a href="images/boom.png" target="_blank"><img src="images/boom.png" alt="images/boom.png"/></a>
+						
+					</li>
+					<li>
+					  <a href="images/new1.png" target="_blank"><img src="images/new1.png" alt="images/new1.png"/></a>
+						
+					</li>
+					<li>
+					  <a href="images/award.png" target="_blank"><img src="images/award.png" alt="images/award.png"/></a>
+						
+					</li>
+					<li>
+						<a href="images/roof1.png" target="_blank"><img src="images/roof1.png" alt="images/roof1.png"/></a>
+                        
+                        </li>
+					<li>
+						<a href="images/award2.png" target="_blank"><img src="images/award2.png" alt="images/award2.png"/></a>
+                        
+                        </li>
+					<li>
+						<a href="images/bath.png" target="_blank"><img src="images/bath.png" alt="images/bath.png"/></a>
+                        
+                        </li>
+					<li>
+						<a href="images/amor.png" target="_blank"><img src="images/amor.png" alt="images/amor.png"/></a>
+                        
+                        </li>
+					<li>
+						<a href="images/green.png" target="_blank"><img src="images/green.png" alt="images/green.png"/></a>
+                        
+                        </li>
+					<li>
+						<a href="images/solid2.png" target="_blank"><img src="images/solid2.png" alt="images/solid2.png"/></a>
+                        
+                        </li>
+					<li>
+						<a href="images/solid1.png" target="_blank"><img src="images/solid1.png" alt="images/solid1.png"/></a>
+						
+				  </li>
+			  </ul>
+
+				<div id="shadow" class="shadow"></div>
+
+				<div id="nav-arrows" class="nav-arrows">
+					<a href="#">Next</a>
+					<a href="#">Previous</a>
+				</div>
+    
+<h1><span>&copy;MCMDIGITALDESIGN</span></h1>
+
+<a class="scrollup" href="#">Scroll Up</a>
+<a class="scrollup2" href="#">Scroll Up</a>
+
+    </body>
+      
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slicebox.js"></script>
+    <script type="text/javascript">
+			$(function() {
+				
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ).hide(),
+						$shadow = $( '#shadow' ).hide(),
+						slicebox = $( '#sb-slider' ).slicebox( {
+							onReady : function() {
+
+								$navArrows.show();
+								$shadow.show();
+
+							},
+							orientation : 'r',
+							cuboidsRandom : true,
+							disperseFactor : 30
+						} ),
+						
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':first' ).on( 'click', function() {
+
+								slicebox.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':last' ).on( 'click', function() {
+								
+								slicebox.previous();
+								return false;
+
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+			});
+			
+			// scroll-to-top button show and hide
+jQuery(document).ready(function(){
+    jQuery(window).scroll(function(){
+        if (jQuery(this).scrollTop() > 10) {
+            jQuery('.scrollup').fadeIn();
+        } else {
+            jQuery('.scrollup').fadeOut();
+    }
+});
+// scroll-to-top animate
+jQuery('.scrollup').click(function(){
+    jQuery("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+
+// scroll-to-top button show and hide
+jQuery(document).ready(function(){
+    jQuery(window).scroll(function(){
+        if (jQuery(this).scrollTop() > 10) {
+            jQuery('.scrollup2').fadeIn();
+        } else {
+            jQuery('.scrollup2').fadeOut();
+    }
+});
+// scroll-to-top animate
+jQuery('.scrollup2').click(function(){
+    jQuery("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+		</script>
+	</body>
+</html>	
