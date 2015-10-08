@@ -634,12 +634,11 @@ h6 span, h7 {
 }
 
 .wrapper5 {
-	position: center;
-	max-width: 840px;
-	width: 50%;
-	padding: 0 165px;
+	float:fixed;
+	max-width: 600px;
+	width: 100%;
+	padding: 25px  25px 0px;
 	margin: 0px auto;
-	overflow:hidden;
 }
 
 .wrapper6 {
